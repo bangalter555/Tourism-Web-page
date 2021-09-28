@@ -1,0 +1,13 @@
+@use "../themes/colours" as c;
+
+.button-link:visited,
+.button-link:link {
+  background-color: c.$buttons-color;
+  color: c.$main-color-black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  width: 90%;
+  padding: 3% 12%;
+  text-align: center;
+  border-radius: 1px;
+}
