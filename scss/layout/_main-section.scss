@@ -2,11 +2,13 @@
 
 .main {
   width: 80%;
-  height: 100%;
+  height: auto;
+  position: absolute; //Con "position: fixed" la barra de scroll no es tomada por la ventana
+  top: 0;
+  right: 0;
+  z-index: 0;
+  background-color: c.$bg-color-black;
   color: c.$main-white;
-  background-image: url(../images/salta-nocturna-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +19,6 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 3%;
 }
 
 .logo {

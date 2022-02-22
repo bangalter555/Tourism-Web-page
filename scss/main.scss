@@ -2,8 +2,13 @@
 
 @forward "../scss/layout/content-bar";
 @forward "../scss/layout/main-section";
+@forward "../scss/layout/footer";
 
 @forward "../scss/components/buttons";
 @forward "../scss/components/navbar";
+@forward "../scss/components/hidden-menu";
+
+@forward "../scss/pages/home";
+@forward "../scss/pages/must-see";
 
 @forward "../scss/breakpoints/media-queries";

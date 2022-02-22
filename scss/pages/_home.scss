@@ -1,0 +1,8 @@
+@use "../themes/colours" as c;
+
+.home-main {
+  height: 100vh;
+  background-image: url(../images/salta-nocturna-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

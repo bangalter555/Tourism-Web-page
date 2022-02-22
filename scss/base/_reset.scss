@@ -10,6 +10,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  transition: 500ms ease forwards;
 }
 
 .body {
@@ -21,6 +22,7 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   font-family: t.$main-font;
+  overflow-x: hidden;
 }
