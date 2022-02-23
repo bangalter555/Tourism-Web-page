@@ -1,0 +1,28 @@
+@use "../themes/colours" as c;
+
+#videos-content {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.youtube-video {
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: c.$main-white;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: c.$buttons-color;
+}

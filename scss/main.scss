@@ -7,8 +7,12 @@
 @forward "../scss/components/buttons";
 @forward "../scss/components/navbar";
 @forward "../scss/components/hidden-menu";
+@forward "../scss/components/info-card";
 
 @forward "../scss/pages/home";
 @forward "../scss/pages/must-see";
+@forward "../scss/pages/videos";
+
+@forward "../scss/utils/mixins";
 
 @forward "../scss/breakpoints/media-queries";

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   font-size: 16px;
 }
@@ -124,7 +125,7 @@
   width: 90%;
   padding: 3% 12%;
   text-align: center;
-  border-radius: 1px;
+  border-radius: 5px;
 }
 
 .button-link:hover {
@@ -185,6 +186,106 @@
   color: #ea9d39;
 }
 
+.info-card {
+  width: 60%;
+  height: 23%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.info-card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.info-card__toggle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.info-card__toggle::before {
+  content: "i";
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: -3.3rem;
+  top: -3.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ea9d39;
+}
+
+.info-card__toggle:checked::before {
+  content: "×";
+}
+
+.info-card__article {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.92);
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  max-width: 2.1rem;
+  max-height: 2.1rem;
+  transition: max-width, max-height, 0.4s ease-in-out;
+}
+
+.info-card__toggle:checked + .info-card__article {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.info-card__toggle:checked + .info-card__article > .article__container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0.4s;
+}
+
+.article__container {
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.article__heading {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #ea9d39;
+}
+
+.article__text {
+  font-size: 13px;
+  margin: 0.5rem 0;
+  color: #141414;
+}
+
+.info-card__button {
+  background-color: #ea9d39;
+  color: #141414;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 10%;
+  padding: 1% 3%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.info-card__button:hover {
+  background-color: rgba(234, 157, 57, 0.8);
+  color: #fff;
+}
+
 .home-main {
   height: 100vh;
   background-image: url(../images/salta-nocturna-1.jpg);
@@ -192,12 +293,39 @@
   background-size: cover;
 }
 
-.must-see-main {
-  height: auto;
-}
-
 .must-see-content {
   height: 200vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#videos-content {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.youtube-video {
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: #ea9d39;
 }
 
 @media (max-width: 900px) {
@@ -219,6 +347,10 @@
 
   .footer-link {
     width: 100%;
+  }
+
+  .info-card {
+    width: 80%;
   }
 }
 @media (max-width: 658px) {
@@ -265,6 +397,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .info-card {
+    width: 95%;
   }
 }
 @media (max-width: 562px) {
