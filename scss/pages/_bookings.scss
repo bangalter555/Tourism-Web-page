@@ -1,9 +1,28 @@
 @use "../themes/colours" as c;
+@use "../utils/mixins" as m;
 
 .bookings-content {
-  height: 300vh;
+  height: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+}
+
+.info-card-booking {
+  @include m.info-cards-generic-style(65%, auto);
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2%;
+
+  a:link,
+  a:visited {
+    font-size: 13px;
+    color: c.$buttons-color;
+  }
+}
+
+svg {
+  height: 0.75rem;
+  width: 0.75rem;
 }

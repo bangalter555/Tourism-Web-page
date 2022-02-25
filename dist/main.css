@@ -359,19 +359,70 @@ a:hover {
 }
 
 .about-content {
-  height: 300vh;
+  height: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+}
+
+.info-card-about {
+  width: 65%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2%;
+}
+.info-card-about a:link,
+.info-card-about a:visited {
+  font-size: 13px;
+  color: #ea9d39;
+}
+
+.article__heading__about {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #ea9d39;
+}
+
+.article__text__about {
+  font-size: 13px;
+  margin: 0.5rem 0;
+  color: #141414;
 }
 
 .bookings-content {
-  height: 300vh;
+  height: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+}
+
+.info-card-booking {
+  width: 65%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2%;
+}
+.info-card-booking a:link,
+.info-card-booking a:visited {
+  font-size: 13px;
+  color: #ea9d39;
+}
+
+svg {
+  height: 0.75rem;
+  width: 0.75rem;
 }
 
 @media (max-width: 900px) {
@@ -396,7 +447,9 @@ a:hover {
   }
 
   .info-card-must-see,
-.info-card-locations {
+.info-card-locations,
+.info-card-about,
+.info-card-booking {
     width: 85%;
   }
 }
@@ -451,7 +504,9 @@ a:hover {
   }
 
   .info-card-must-see,
-.info-card-locations {
+.info-card-locations,
+.info-card-about,
+.info-card-booking {
     width: 95%;
   }
 }
