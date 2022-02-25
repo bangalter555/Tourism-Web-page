@@ -20,7 +20,7 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   width: 100vw;
-  height: auto;
+  max-height: 522px;
   font-family: "IBM Plex Serif", serif;
   overflow-x: hidden;
 }
