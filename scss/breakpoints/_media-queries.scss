@@ -17,9 +17,10 @@
     width: 100%;
   }
 
-  //Must-see section
-  .info-card {
-    width: 80%;
+  //Info-cards
+  .info-card-must-see,
+  .info-card-locations {
+    width: 85%;
   }
 }
 
@@ -72,8 +73,13 @@
     align-items: center;
   }
 
-  //Must-see section
-  .info-card {
+  .title-header {
+    font-size: 1.8rem;
+  }
+
+  //Info cards
+  .info-card-must-see,
+  .info-card-locations {
     width: 95%;
   }
 }
@@ -100,6 +106,10 @@
   .second-title {
     font-size: 1rem;
   }
+
+  .title-header {
+    font-size: 1.5rem;
+  }
 }
 
 //FIFTH BREAKPOINT
@@ -114,6 +124,10 @@
 
   .main {
     width: 100%;
+  }
+
+  .title-header {
+    font-size: 1rem;
   }
 
   .footer {

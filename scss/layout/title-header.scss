@@ -1,0 +1,14 @@
+@use "../themes/colours" as c;
+
+.title-header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: c.$main-color-black;
+  color: c.$main-white;
+  padding: 1.5%;
+  font-size: 2rem;
+}

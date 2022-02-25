@@ -10,3 +10,12 @@
   text-align: center;
   border-radius: 5px;
 }
+
+@mixin info-cards-generic-style($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 2.6rem -4.6rem rgba(0, 0, 0, 0.8);
+  position: relative;
+}

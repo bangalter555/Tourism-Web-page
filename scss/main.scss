@@ -3,6 +3,7 @@
 @forward "../scss/layout/content-bar";
 @forward "../scss/layout/main-section";
 @forward "../scss/layout/footer";
+@forward "../scss/layout/title-header.scss";
 
 @forward "../scss/components/buttons";
 @forward "../scss/components/navbar";
@@ -12,6 +13,9 @@
 @forward "../scss/pages/home";
 @forward "../scss/pages/must-see";
 @forward "../scss/pages/videos";
+@forward "../scss/pages/locations";
+@forward "../scss/pages/about";
+@forward "../scss/pages/bookings";
 
 @forward "../scss/utils/mixins";
 
