@@ -539,9 +539,6 @@ svg {
   .contentbar {
     justify-content: center;
   }
-  .contentbar .button-link {
-    display: none;
-  }
 
   .main {
     width: 100%;

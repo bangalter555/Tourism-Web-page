@@ -42,4 +42,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<a href="https://www.youtube.com/watch?v=JvbzmkR5t90&t=49s" class="youtube-link" target="_blank">Explore the city with us</a>`,
     `<iframe class="youtube-video" src="https://www.youtube.com/embed/JvbzmkR5t90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
   );
+  responsiveMedia(
+    "explore",
+    "(min-width: 363px)",
+    `<img class="image" src="../" alt="explore">`,
+    `<iframe class="youtube-video" src="https://www.youtube.com/embed/JvbzmkR5t90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+  );
 });
