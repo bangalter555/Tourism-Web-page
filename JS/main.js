@@ -45,7 +45,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   responsiveMedia(
     "explore",
     "(min-width: 363px)",
-    `<img class="image" src="../" alt="explore">`,
-    `<iframe class="youtube-video" src="https://www.youtube.com/embed/JvbzmkR5t90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    `<img class="image" src="./images/explore.png" alt="explore">`,
+    `<p>Explore</p>`
   );
 });
