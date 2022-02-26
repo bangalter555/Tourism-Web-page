@@ -557,5 +557,72 @@ svg {
     font-size: 8px;
   }
 }
+@media (min-height: 800px) {
+  .contentbar {
+    width: 100%;
+    height: 15%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 1%;
+  }
+
+  .button-link:visited,
+.button-link:link {
+    font-size: 1.3rem;
+    width: 25%;
+    padding: 2%;
+  }
+
+  .title {
+    font-size: 8rem;
+  }
+
+  .navbar .navlink {
+    display: none;
+  }
+  .navbar .hamburger {
+    visibility: visible;
+    width: 10%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .navbar .hamburger i {
+    font-size: 4rem;
+  }
+
+  .main {
+    width: 100%;
+    top: 14%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .info-card-must-see,
+.info-card-locations,
+.info-card-about,
+.info-card-booking {
+    width: 95%;
+  }
+
+  .hidden-menu a:link,
+.hidden-menu a:visited {
+    font-size: 3rem;
+  }
+
+  .youtube-video,
+.info-card-booking {
+    width: 95vw;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
