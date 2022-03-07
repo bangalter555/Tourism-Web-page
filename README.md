@@ -26,7 +26,7 @@
 
 ### About section
 
-#### In this section you'll find very important and useful information regarding international contact, different access and contact info of different international travel agencies.
+#### In this section you'll find very important and useful information regarding both national and international acces, access by air and contact info of different international travel agencies.
 
 ### Booking section
 
