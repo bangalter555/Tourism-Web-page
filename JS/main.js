@@ -1,5 +1,4 @@
 import { w, d, hamburgerBtn, hiddenMenu } from "./elements.js";
-
 import { responsiveMedia } from "./responsive-media.js";
 //Creating function to make hidden menu show up
 d.addEventListener("click", (e) => {
