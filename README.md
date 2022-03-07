@@ -34,4 +34,4 @@
 
 ## Technology
 
-### This web page is mostly built with HTML, CSS and Javascript.
+### This web page is entirely built with HTML, CSS and Javascript.
