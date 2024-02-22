@@ -3,7 +3,7 @@
 
 .button-link:visited,
 .button-link:link {
-  @include m.buttons-1(1.1rem, 90%, 3% 12%);
+  @include m.buttons-1(1rem, 90%, 3% 12%);
 }
 
 .button-link:hover {
